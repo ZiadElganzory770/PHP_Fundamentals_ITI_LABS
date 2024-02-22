@@ -1,5 +1,5 @@
 {
     "autoload": {
-        "files": ["config.php","functions.php"]
+        "files": ["config.php","functions.php","data.php"]
     }
 }
