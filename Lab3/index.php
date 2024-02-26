@@ -5,6 +5,8 @@ require_once 'vendor/autoload.php';
 use App\Counter;
 use App\Visitor;
 
+session_start();
+
 $countFilePath = "Counter.txt";
 $counter = new Counter($countFilePath);
 
