@@ -38,7 +38,7 @@ if (!empty($item)) {
         <td><?php echo $item->product_name; ?></td>
         <td><?php echo $item->list_price; ?></td>
         <td><?php echo $item->Rating; ?></td>
-        <td><img width="200" height="200" src="../images/<?php echo $item->Photo; ?>" alt="Product Image"></td>
+        <td><img width="200" height="200" src="../images/<?php echo $item->Photo; ?>" alt="Image"></td>
       </tr>
     </table>
   </body>
