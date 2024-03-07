@@ -6,4 +6,3 @@ class Items extends model
 {
   protected $table = 'items';
 }
-?>

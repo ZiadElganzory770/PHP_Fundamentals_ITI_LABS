@@ -16,17 +16,17 @@ class DBHandler implements DBHandlerInterface
   {
     try {
       $this->_capsule->addConnection([
-        'driver' => __DRIVER__,
+        'driver' => __DBDRIVER__,
         'host' => __HOST__,
-        'database' => __DATABASE__,
+        'database' => __DB__,
         'username' => __USER__,
         'password' => __PASS__,
       ]);
       $this->_capsule->setAsGlobal();
       $this->_capsule->bootEloquent();
       return true;
-    } catch (Exception $e) {
-      echo "Connection Error!: " . $e->getMessage();
+    } catch (Exception $err) {
+      echo "Error(in connect): " . $err->getMessage();
       return false;
     }
   }
@@ -48,8 +48,8 @@ class DBHandler implements DBHandlerInterface
     try {
       capsule::disconnect();
       return true;
-    } catch (Exception $e) {
-      echo "Disconnection Error!: " . $e->getMessage();
+    } catch (Exception $err) {
+      echo "Error(in disconnect): " . $err->getMessage();
       return false;
     }
   }

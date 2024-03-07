@@ -19,7 +19,7 @@ if (!empty($item)) {
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+    <title>Product Details</title>
   </head>
 
   <body>
@@ -38,7 +38,7 @@ if (!empty($item)) {
         <td><?php echo $item->product_name; ?></td>
         <td><?php echo $item->list_price; ?></td>
         <td><?php echo $item->Rating; ?></td>
-        <td><img width="200" height="200" src="../images/<?php echo $item->Photo; ?>" alt="Image"></td>
+        <td><img width="200" height="200" src="../images/<?php echo $item->Photo; ?>" alt="Product Image"></td>
       </tr>
     </table>
   </body>
